@@ -17,7 +17,9 @@ def rename(root, name):
 
 
 def get_valid_name(name):
-
+    name = name.replace('_', ' ')
+    name = name.replace('-', ' - ')
+    name = name.title()
     return name
 
 
